@@ -1,4 +1,4 @@
-/* Nico Giuliani 06/13/2016 */
+/* Nico Giuliani 06/13/2016, 08/30/2018 */
 
 public class Game {
  
@@ -6,7 +6,7 @@ public class Game {
     boolean keepPlaying = true;
     Jar mJar;
 
-    // until the player has chosen to quit playing, continue initiating new rounds
+    // Until the player has chosen to quit playing, continue initiating new rounds
     while (keepPlaying) {
       mJar = Prompter.promptForSetup();
       mJar.fill();
