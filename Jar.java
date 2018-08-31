@@ -1,11 +1,11 @@
-/* Nico Giuliani 06/13/2016 */
+/* Nico Giuliani 06/13/2016, 08/30/2018 */
 
 import java.util.Random;
 
 public class Jar {
   public int mCapacity;
-  public String mItemType;
   private int mActualAmount;
+  public String mItemType;
 
   public Jar(String itemType, int maxAmount) {
     mItemType = itemType.toLowerCase();

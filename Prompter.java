@@ -22,13 +22,14 @@ public class Prompter {
 
   // Determines if the user entered a valid integer or not
   private static boolean checkIfNumber(String number) {
+    if (number == null) { return false; }
     try {
-      if (number == null || Integer.parseInt(number) <= 0) { throw new NumberFormatException(); }
+      if (Integer.parseInt(number) <= 0) { throw new NumberFormatException(); }
+      return true;
     } catch (NumberFormatException ex) {
       alertError();
       return false;
     }
-    return true;
   }
 
   // Prints out an error if an invalid number is given
